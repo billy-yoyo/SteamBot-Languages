@@ -12,8 +12,8 @@
     "removed": "Must wait another %t seconds to count your removed games again (%cd second cooldown)",
     "playtime": "Must wait another %t seconds to search for a user playtime again (%cd second cooldown)",
     "convert": "Must wait another %t seconds to convert money again (%cd second cooldown)",
-    "popular": "Must wait another %t seconds before getting popular games again (%cd second cooldown)",
-    "userdata": "Must wait another %t seconds before getting user data again (%cd second cooldown)",
+    "popular": "Must wait another %t seconds before getting help again (%cd second cooldown)",
+    "userdata": "Must wait another %t seconds before getting help again (%cd second cooldown)",
     "help": "Must wait another %t seconds before getting help again (%cd second cooldown)",
     "info": "Must wait another %t seconds before getting info again (%cd second cooldown)",
     "stats": "Must wait another %t seconds before getting info again (%cd second cooldown)",
@@ -25,7 +25,8 @@
     "currency": "Must wait another %t seconds before changing your default currency again (%cd second cooldown)",
     "country": "Must wait another %t seconds before changing your country again (%cd second cooldown)",
     "feedback": "Must wait another %t seconds to send more feedback (%cd second cooldown)",
-    "language": "Must wait another %t seconds to change your language (%cd second cooldown)"
+    "language": "Must wait another %t seconds to change your language (%cd second cooldown)",
+    "random": "Must wait another %t seconds before getting another suggestion (%cd second cooldown)"
   },
 
   "messages": {
@@ -69,18 +70,22 @@
       "   steam info                   - show some information about SteamBot",
       "   steam stats                  - show some statistics about SteamBot",
       "   steam clean [limit]          - removes all of SteamBots messages from the last 'limit' messages",
-      "   steam perm help              - get information about how to setup permissions"
+      "   steam perm help              - get information about how to setup permissions",
+      "   steam convert [amount] [currency] [currency]  - convert a currency to another one",
+      "",
+      "If you need more help join our server: https://discord.gg/FpFwC5c"
     ],
     "help": [
-      "Commands For SteamBot:",
+      "Commands For SteamBot: (if a command isn't working, try adding *, like steam user*)",
+      "   steam help other             - see a list of other miscellaneous commands",
       "   steam game [name]            - search for a game on steam",
       "   steam games [name]           - list all games found matching 'name'",
       "   steam user [name]            - search for a user on steam",
-      "   steam profile [name]         - gets a user using an exact name, only use if steam user is showing incorrect results",
       "   steam users [name]           - search for a list of users matching 'name'",
       "   steam item [game] \"item\"     - search for information about an item",
       "   steam library [name]         - search for a users library",
       "   steam playtime [user] \"game\" - search for a users playtime for a specific game",
+      "   steam random [user]          - select a random game from a users library",
       "   steam achiev [game] \"achiev\" - get information about the global stats for a specific games achievement",
       "   steam top                    - get a list of the top selling games",
       "   steam new                    - get a list of the new releases",
@@ -88,15 +93,12 @@
       "   steam upcoming               - get a list of upcoming games",
       "   steam popular                - get a list of the most popular games by player-count",
       "   steam userdata               - show data about the amount of steam users online",
+      "   steam removed [user]         -  gets the number of games in your library that have been removed from steam (credit to @TheAnthonyNL)",
       "   steam me [name]              - set your default username (dont have to enter your own name for other commands)",
       "   steam name [user|mention]    - check a users username",
       "   steam language [language]    - set your language for steam messages",
       "   steam country [countrycode]  - set your country for the store (countrycodes are 2 digit, like GB, US or NZ)",
-      "   steam currency [currency] [symbol] - set your default currency for the market (currency is the code, e.g USD or GBP, symbol is like $ or £)",
-      "   steam convert [amount] [currency] [currency]  - convert a currency to another one",
-      "",
-      "Other Commands:",
-      "   steam help other             - see a list of other miscellaneous commands"
+      "   steam currency [currency] [symbol] - set your default currency for the market (currency is the code, e.g USD or GBP, symbol is like $ or £)"
     ],
     "help_dm": "Sent you commands in a DM!",
     "info": [
