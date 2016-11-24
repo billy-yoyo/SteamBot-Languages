@@ -26,12 +26,8 @@
     "country": "Must wait another %t seconds before changing your country again (%cd second cooldown)",
     "feedback": "Must wait another %t seconds to send more feedback (%cd second cooldown)",
     "language": "Must wait another %t seconds to change your language (%cd second cooldown)",
-<<<<<<< HEAD
     "random": "Must wait another %t seconds before getting another suggestion (%cd second cooldown)",
     "wishlist": "Must wait another %t seconds before looking at your wishlist again (%cd second cooldown)"
-=======
-    "random": "Must wait another %t seconds before getting another suggestion (%cd second cooldown)"
->>>>>>> origin/master
   },
 
   "messages": {
