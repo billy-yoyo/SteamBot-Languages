@@ -27,7 +27,10 @@
     "feedback": "Must wait another %t seconds to send more feedback (%cd second cooldown)",
     "language": "Must wait another %t seconds to change your language (%cd second cooldown)",
     "random": "Must wait another %t seconds before getting another suggestion (%cd second cooldown)",
-    "wishlist": "Must wait another %t seconds before looking at your wishlist again (%cd second cooldown)"
+    "wishlist": "Must wait another %t seconds before looking at your wishlist again (%cd second cooldown)",
+    "server_language": "Must wait another %t seconds to change the servers language (%cd second cooldown)",
+    "prefix": "Must wait another %t seconds before changing the prefix again (%cd second cooldown)",
+    "watch_help": "Must wait another %t seconds before getting watch help again (%cd second cooldown)"
   },
 
   "messages": {
@@ -71,16 +74,21 @@
       "   steam info                   - show some information about SteamBot",
       "   steam stats                  - show some statistics about SteamBot",
       "   steam clean [limit]          - removes all of SteamBots messages from the last 'limit' messages",
+      "   steam prefix [server|channel] \"prefix\" - set the prefix for this server or channel, e.g \"steam prefix channel !\" means \"!user [user]\" instead of \"steam user [user]\"",
       "   steam perm help              - get information about how to setup permissions",
       "   steam convert [amount] [currency] [currency]  - convert a currency to another one",
       "",
+      "```",
+      "for more detailed help check out our website: http://steambot.site/commands",
       "If you need more help join our server: https://discord.gg/FpFwC5c"
     ],
     "help": [
       "Commands For SteamBot: (if a command isn't working, try adding *, like steam user*)",
+      "   steam premium                - information about steambot premium users",
       "   steam help other             - see a list of other miscellaneous commands",
       "   steam game [name]            - search for a game on steam",
       "   steam games [name]           - list all games found matching 'name'",
+      "   steam watch help             - information about sale watchers for games (premium only)",
       "   steam user [name]            - search for a user on steam",
       "   steam users [name]           - search for a list of users matching 'name'",
       "   steam item [game] \"item\"     - search for information about an item",
@@ -99,8 +107,12 @@
       "   steam me [name]              - set your default username (dont have to enter your own name for other commands)",
       "   steam name [user|mention]    - check a users username",
       "   steam language [language]    - set your language for steam messages",
+      "   steam server_language [language] - set the default language for your server",
       "   steam country [countrycode]  - set your country for the store (countrycodes are 2 digit, like GB, US or NZ)",
-      "   steam currency [currency] [symbol] - set your default currency for the market (currency is the code, e.g USD or GBP, symbol is like $ or £)"
+      "   steam currency [currency] [symbol] - set your default currency for the market (currency is the code, e.g USD or GBP, symbol is like $ or £)",
+      "",
+      "```",
+      "for more detailed help check out our website: http://steambot.site/commands"
     ],
     "help_dm": "Sent you commands in a DM!",
     "info": [
@@ -113,8 +125,21 @@
       "SteamBot is in %s servers and has been running for %s, %s commands have been used since last restart",
       "This server is in shard %s (this shard is connected to %s servers)",
       "```",
-      "If you want to support SteamBot's development and help pay for the hosting, please donate using this link:",
+      "for more information please visit our website: http://steambot.site/",
+      "",
+      "If you want to support SteamBot's development, help pay for the hosting and become a premium user, please donate using this link:",
       "%s"
+    ],
+    "premium": [
+      "SteamBot premium member rewards:",
+      "  - allowed to use the 'watch' command, which notifies you when a specific game goes on sale",
+      "  - access to the private development channel in our server",
+      "  - more premium features on there way, suggest some!",
+      "",
+      "Premium features are features my bot wouldn't be able to handle everyone having access to",
+      "To become a premium member, just pledge at least $1 per month on our patreon:",
+      "```",
+      "https://www.patreon.com/billyoyo"
     ],
     "stats": [
       "Servers:  %s",
@@ -144,6 +169,22 @@
       "      Image: %s",
       "    Percent: %s"
     ],
+    "perm_help": [
+      "Commands For Permissions:  (all commands effect the *current* server or channel)",
+      "    steam perm server|channel get [command]                  - get all the permissions required for this command",
+      "    steam perm server|channel add [command] [permissions]    - add some permissions to this command",
+      "    steam perm server|channel remove [command] [permissions] - remove some permissions for this command",
+      "    steam perm server|channel clear [command]                - remove all the permissions for this command",
+      "",
+      "[permissions] is a list seperated by a comma, like this:",
+      "    manage messages, kick members, role|254650759927300096",
+      "where role|254650759927300096 is role|[id], with [id] being the id of a role, use \"steam roleid [role]\" to get a role's id"
+    ],
+    "perm_get": "Current permissions for %s in this %s are:\n %s",
+    "perm_empty": "No permissions are set for %s in this %s",
+    "perm_clear": "Cleared all permissions for %s in this %s",
+    "perm_add": "Added the following permissions for %s in this %s:\n %s",
+    "perm_remove": "Removed the following permissions from %s in this %s:\n %s",
     "achiev_percent": "of players have got this achievement",
     "invite": "Use this link to invite me to your server:",
     "me": "Set your steam username to ",
@@ -152,8 +193,42 @@
     "country": "Changed your country from %s to %s",
     "feedback": "Feedback sent!",
     "language": "Set your language to %s",
+    "server_language": "Set server language to %s",
     "wishlist": "Games in your wishlist which are on sale:",
-    "wishlist_long": "Games in your wishlist which are on sale: (First 10 only, your wishlist is too long!)"
+    "wishlist_long": "Games in your wishlist which are on sale: (First 10 only, your wishlist is too long!)",
+    "prefix_channel": "Set channel prefix to %s",
+    "prefix_server": "Set server prefix to %s",
+	"time": ["second", "seconds", "minute", "minutes", "hour", "hours", "day", "days", "month", "months", "year", "years"],
+    "deal_started": "A deal for %s just started, it is now %s off!",
+    "deal_increased": "The deal for %s just increased, from %s to %s off!",
+    "deal_reduced": "The deal for %s just decreased, from %s to %s off!",
+    "deal_ended": "The deal for %s just ended (was %s off)",
+    "watch_added": "Watcher added, looking for when %s goes on sale for more than %s%% (ID: %s)",
+    "watch_help": [
+      "Commands For Watchers:",
+      "    steam watch add pm|mention|message [percent] [game]  - add a watcher for a game in this channel (or in your pms)",
+      "    steam watch remove [watcher-id]                      - remove a watcher",
+      "    steam watch get [watcher-id]                         - show some information about a specific watcher of yours",
+      "    steam watch list                                     - list all your watchers",
+      "    steam watch find [game]                              - find the ids of any watchers you have for that game",
+      "    steam watch help                                     - get this page",
+      "",
+      "Examples of using steam watch add:",
+      "   steam watch add pm 20% global offensive   -  will pm you any time CS:GO goes on sale for 20% or more",
+      "   steam watch add message 30% rocket league -  will send a message in this channel any time rocket league goes on sale for 30% or more",
+      "   steam watch add mention 10% The Forest    -  will mention you in this channel any time the forest goes on sale for 10% or more"
+    ],
+    "watch_removed": "Removed watcher with ID %s",
+    "watch_get": [
+      "         ID: %s",
+      "       Game: %s",
+      "    Percent: %s",
+      "   Location: %s",
+      "Location ID: %s"
+    ],
+    "watch_find": "You have the following watchers for %s\n  %s",
+    "watch_list": "You own the following watchers:\n  %s",
+    "watch_premium": "You must be a premium user to use this command, type 'steam premium' to find out more!"
   },
 
   "errors": {
@@ -169,7 +244,23 @@
     "currency_invalid": "Currency symbol cannot be longer than 5 characters!",
     "currency_unsupported": "Unsupported currency, see https://docs.openexchangerates.org/docs/supported-currencies for a list of supported currencies",
     "country_unsupported": "Unsupported country code, see https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json for a list of supported country codes",
-    "language": "Language %s is unsupported, Currently supported languages are: %s"
+    "language": "Language %s is unsupported, Currently supported languages are: %s",
+    "prefix": "Invalid prefix type, must be either 'server' or 'channel'",
+    "perm_dm": "Cannot set permissions in a private channel!",
+    "perm_destination": "destination for permission must be 'server' or 'channel'",
+    "perm_action": "action for permissin must be 'add', 'remove', 'get' or 'clear'",
+    "perm_invalid": "The following were invalid permissions: \n%s",
+    "perm_ignored": "The following permissions were ignored as they are already required: \n%s",
+    "perm_ignored_removed": "The following permissions were ignored as they aren't required: \n%s",
+    "no_roles": "No roles found matching %s",
+    "watch_locationtype": "Invalid location type, must be one of 'pm', 'mention' or 'message'",
+    "watch_percent": "Percent must be a number",
+    "watch_invalid_percent": "Percent must be greater than 0",
+    "watch_invalid_game": "Couldn't find a game matching %s",
+    "watch_cap": "You have hit the cap of watchers (You can't have more than %s watchers), please remove some before adding more",
+    "watch_exists": "A watcher for this game already exists in this channel, please remove it first if you want to add a different one",
+    "watch_noid": "Couldn't find a watcher with id %s",
+    "watch_find": "You don't have any watchers for %s"
   },
 
   "exceptions": {
