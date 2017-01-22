@@ -30,7 +30,12 @@
     "wishlist": "Must wait another %t seconds before looking at your wishlist again (%cd second cooldown)",
     "server_language": "Must wait another %t seconds to change the servers language (%cd second cooldown)",
     "prefix": "Must wait another %t seconds before changing the prefix again (%cd second cooldown)",
-    "watch_help": "Must wait another %t seconds before getting watch help again (%cd second cooldown)"
+    "watch_help": "Must wait another %t seconds before getting watch help again (%cd second cooldown)",
+    "premium": "Must wait another %t seconds before getting premium information again (%cd second cooldown)",
+    "recommend": "Must wait another %t seconds before getting another recommendation (%cd second cooldown)",
+    "avatar": "Must wait another %t seconds before getting another user avatar (%cd second cooldown)",
+    "level": "Must wait another %t seconds before getting another users level (%cd second cooldown)",
+    "players": "Must wait another %t seconds before getting another games player count (%cd second cooldown)"
   },
 
   "messages": {
@@ -54,7 +59,8 @@
        "    Country: %s",
        "     Avatar: %s",
        "    Created: %s",
-       "Last Logoff: %s"
+       "Last Logoff: %s",
+       "      Level: %s"
     ],
     "library": "Top 10 Games For %s (Total %s games):",
     "removed": "`%s` out of the `%s` games in %s's library have been removed from steam (%s games have been removed in total)",
@@ -74,13 +80,14 @@
       "   steam info                   - show some information about SteamBot",
       "   steam stats                  - show some statistics about SteamBot",
       "   steam clean [limit]          - removes all of SteamBots messages from the last 'limit' messages",
+      "   steam prefix                 - show prefix for this channel",
       "   steam prefix [server|channel] \"prefix\" - set the prefix for this server or channel, e.g \"steam prefix channel !\" means \"!user [user]\" instead of \"steam user [user]\"",
       "   steam perm help              - get information about how to setup permissions",
       "   steam convert [amount] [currency] [currency]  - convert a currency to another one",
       "",
       "```",
       "for more detailed help check out our website: http://steambot.site/commands",
-      "If you need more help join our server: https://discord.gg/FpFwC5c"
+      "If you need more help join our server: https://discord.gg/EXss2Ek"
     ],
     "help": [
       "Commands For SteamBot: (if a command isn't working, try adding *, like steam user*)",
@@ -91,6 +98,7 @@
       "   steam watch help             - information about sale watchers for games (premium only)",
       "   steam user [name]            - search for a user on steam",
       "   steam users [name]           - search for a list of users matching 'name'",
+      "   steam avatar [name]          - gets a user's avatar",
       "   steam item [game] \"item\"     - search for information about an item",
       "   steam library [name]         - search for a users library",
       "   steam wishlist [name]        - search for the games in a users wishlist which are on sale",
@@ -101,6 +109,7 @@
       "   steam new                    - get a list of the new releases",
       "   steam specials               - get a list of the most popular discounts",
       "   steam upcoming               - get a list of upcoming games",
+      "   steam players [game]         - get information about the player count of a game",
       "   steam popular                - get a list of the most popular games by player-count",
       "   steam userdata               - show data about the amount of steam users online",
       "   steam removed [user]         -  gets the number of games in your library that have been removed from steam (credit to @TheAnthonyNL)",
@@ -132,9 +141,9 @@
     ],
     "premium": [
       "SteamBot premium member rewards:",
-      "  - allowed to use the 'watch' command, which notifies you when a specific game goes on sale",
+      "  - allowed to use the 'watch' command, which notifies you when a specific game goes on sale (see 'steam watch help' for more info)",
       "  - access to the private development channel in our server",
-      "  - more premium features on there way, suggest some!",
+      "  - more premium features on the way, suggest some!",
       "",
       "Premium features are features my bot wouldn't be able to handle everyone having access to",
       "To become a premium member, just pledge at least $1 per month on our patreon:",
@@ -228,7 +237,17 @@
     ],
     "watch_find": "You have the following watchers for %s\n  %s",
     "watch_list": "You own the following watchers:\n  %s",
-    "watch_premium": "You must be a premium user to use this command, type 'steam premium' to find out more!"
+    "watch_premium": "You must be a premium user to use this command, type 'steam premium' to find out more!",
+    "recommend": "Your recommended games:\n    %s",
+    "prefix_get": "Current prefix for this channel is: %s",
+    "level": "%s is level %s",
+    "playerdata": [
+      "           Name: %s",
+      "Current Players: %s",
+      "   Peak Players: %s",
+      "           Rank: %s",
+      "           Link: %s"
+    ]
   },
 
   "errors": {
@@ -260,7 +279,9 @@
     "watch_cap": "You have hit the cap of watchers (You can't have more than %s watchers), please remove some before adding more",
     "watch_exists": "A watcher for this game already exists in this channel, please remove it first if you want to add a different one",
     "watch_noid": "Couldn't find a watcher with id %s",
-    "watch_find": "You don't have any watchers for %s"
+    "watch_find": "You don't have any watchers for %s",
+    "recommend": "Failed to find recommendations for the following games (please try again in a few minutes):\n    %s",
+    "prefix_dm": "Cannot set prefix in a private channel!"
   },
 
   "exceptions": {
