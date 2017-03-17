@@ -19,3 +19,5 @@ once you've translated it, just send me a PM with the .json file (hastebin/paste
 @Wolf#9626 for the french translation <3
 
 @Viniuau#3029 for the brazillian-portuguese translation <3
+
+@Psi Crow#3348 for the german translation <3
