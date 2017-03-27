@@ -16,7 +16,7 @@
     "userdata": "Must wait another %t seconds before getting user data again (%cd second cooldown)",
     "help": "Must wait another %t seconds before getting help again (%cd second cooldown)",
     "info": "Must wait another %t seconds before getting info again (%cd second cooldown)",
-    "stats": "Must wait another %t seconds before getting info again (%cd second cooldown)",
+    "stats": "Must wait another %t seconds before getting stats again (%cd second cooldown)",
     "item": "Must wait another %t seconds to search for an item (%cd second cooldown)",
     "screenshot": "Must wait another %t seconds to search for a screenshot (%cd second cooldown)",
     "achiev": "Must wait another %t seconds to see your achievements again (%cd second cooldown)",
@@ -224,8 +224,8 @@
       "",
       "Examples of using steam watch add:",
       "   steam watch add pm 20% global offensive   -  will pm you any time CS:GO goes on sale for 20% or more",
-      "   steam watch add message 30% rocket league -  will send a message in this channel any time rocket league goes on sale for 30% or more",
-      "   steam watch add mention 10% The Forest    -  will mention you in this channel any time the forest goes on sale for 10% or more"
+      "   steam watch add message 30% rocket league -  will send a message in this channel any time Rocket League goes on sale for 30% or more",
+      "   steam watch add mention 10% the forest    -  will mention you in this channel any time The Forest goes on sale for 10% or more"
     ],
     "watch_removed": "Removed watcher with ID %s",
     "watch_get": [
@@ -267,7 +267,7 @@
     "prefix": "Invalid prefix type, must be either 'server' or 'channel'",
     "perm_dm": "Cannot set permissions in a private channel!",
     "perm_destination": "destination for permission must be 'server' or 'channel'",
-    "perm_action": "action for permissin must be 'add', 'remove', 'get' or 'clear'",
+    "perm_action": "action for permission must be 'add', 'remove', 'get' or 'clear'",
     "perm_invalid": "The following were invalid permissions: \n%s",
     "perm_ignored": "The following permissions were ignored as they are already required: \n%s",
     "perm_ignored_removed": "The following permissions were ignored as they aren't required: \n%s",
@@ -286,7 +286,7 @@
 
   "exceptions": {
     "timeout": "Steam took too long to respond, please try again later.",
-    "banned": "Either you or this channel are banned from using the `%s` command!",
+    "banned": "Either you or this channel is banned from using the `%s` command!",
     "cmd_permission": "You don't have permission to use the `%s` command in this channel!",
     "permission": "SteamBot doesn't have permission to use that command!",
     "language": "SteamBot language error, language is corrupted or incomplete. Please report this using `steam feedback`",
