@@ -1,6 +1,6 @@
 # SteamBot 
 ### A bot for everything to do with Steam 
-Designed with ease of use in mind, [SteamBot] (https://bots.discord.pw/bots/205653475298639872) doesn't require any set up of vanity urls or making your profile public, just invite it to your server then you and your members are all ready to go.
+Designed with ease of use in mind, [SteamBot](https://bots.discord.pw/bots/205653475298639872) doesn't require any set up of vanity urls or making your profile public, just invite it to your server then you and your members are all ready to go.
 
 ##### Developed by [Billyoyo](https://github.com/billy-yoyo) 
 [![discord](https://discordapp.com/api/guilds/209743049327116309/embed.png)](https://discord.gg/JSGpedK)
