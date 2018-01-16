@@ -31,3 +31,5 @@ Once you've translated it, just send me a PM with the .json file ([hastebin](htt
 @Viniuau#3029 for the brazilian-portuguese translation <3
 
 @Wolf#9626 for the french translation <3
+
+@ediXedi#2353 for the romanian translation <3

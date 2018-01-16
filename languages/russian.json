@@ -85,6 +85,7 @@
     "help": [
       "Команды для SteamBot: (если команда не работает - попробуйте добавить *, например steam user*)",
       "   steam help other             - Показывает дополнительные команды",
+      "   steam guide ",
       "   steam game [name]            - Ищет игру по названию в стиме",
       "   steam games [name]           - Поиск всех игр с названиями совпадающими с эапросом 'name'",
       "   steam user [name]            - Ищет пользователя в стиме",
@@ -107,7 +108,7 @@
       "   steam name [user|mention]    - Проверить ник пользователя в стиме если он был присвоен ранее",
       "   steam language [language]    - Выбрать язык для сообщений от бота",
       "   steam server_language [language] - установить язык по умолчанию для этого сервера",
-      "   steam country [countrycode]  - Выбрать страну для Магазина Steam (код из двух букв, например GB, UA или RU)",
+      "   steam country [countrycode]  - Выбрать страну для Магазина Steam (код из двух букв, например GB, US или RU)",
       "   steam currency [currency] [symbol] - Выбрать валюту по умолчанию для Торговой площадки (код из 3 букв, например USD или GBP, символ например $ или £)"
     ],
     "help_dm": "Команды высланы в личном сообщении!",
@@ -236,8 +237,8 @@
     "name_unset_other": "%s еще не указал свой ник в стиме, но может сделать это используя команду `steam me [username]` для привязки!",
     "name_unset": "Вы еще не указал свой ник в стиме, используйте `steam me [username]` для привязки!",
     "currency_invalid": "Значок валюты не может быть больше 5 символов!",
-    "currency_unsupported": "Неизвестный код валюты, зайдите на https://docs.openexchangerates.org/docs/supported-currencies для посмотра списка кодов поддерживаемых валют",
-    "country_unsupported": "Неизвестный код страны, зайдите на https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json для просмотра списка кодов доступных стран",
+    "currency_unsupported": "¬Неизвестный код валюты, зайдите на https://docs.openexchangerates.org/docs/supported-currencies для посмотра списка кодов поддерживаемых валют",
+    "country_unsupported": "¬Неизвестный код страны, зайдите на https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json для просмотра списка кодов доступных стран",
     "language": "Язык %s не доступен, доступные языки: %s",
     "prefix": "Неправильно указан префикс, должен быть указан 'server' либо 'channel'",
     "perm_dm": "Нельзя указывать права в личных сообщениях!",

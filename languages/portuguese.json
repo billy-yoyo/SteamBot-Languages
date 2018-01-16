@@ -91,6 +91,7 @@
     "help": [
       "Comandos pro SteamBot: (se um comando não está funcionando, tente adicionar *, assim: steam user*)",
       "   steam premium                - informação sobre usuários premium do SteamBot",
+      "   steam guide ",
       "   steam help other             - veja uma lista de outros comandos",
       "   steam game [name]            - procura por um jogo na Steam",
       "   steam games [name]           - lista todos os jogos encontrados correspondendo a 'name'",
@@ -256,8 +257,8 @@
     "name_unset_other": "%s não configuraram seu nome de usuário Steam, eles podem usar `steam me [nome de usuário]` para configura-lo!",
     "name_unset": "Você não configurou seu nome de usuário Steam, use `steam me [nome de usuário]` para configura-lo!",
     "currency_invalid": "Símbolo da moeda não pode ter mais do que 5 caracteres!",
-    "currency_unsupported": "Moeda não suportada, veja https://docs.openexchangerates.org/docs/supported-currencies para uma lista de moedas suportadas",
-    "country_unsupported": "Código de país não suportado, veja https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json para uma lista de códigos de países",
+    "currency_unsupported": "¬Moeda não suportada, veja https://docs.openexchangerates.org/docs/supported-currencies para uma lista de moedas suportadas",
+    "country_unsupported": "¬Código de país não suportado, veja https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json para uma lista de códigos de países",
     "language": "Linguagem %s não é suportada, As linguagens suportadas atualmente são: %s",
     "prefix": "Tipo de prefixo inválido, deve ser ou 'server' ou 'channel'",
     "perm_dm": "Não pode configurar permissões em um canal privado!",
