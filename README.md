@@ -35,3 +35,7 @@ Once you've translated it, just send me a PM with the .json file ([hastebin](htt
 @ediXedi#2353 for the romanian translation <3
 
 @OtakuMan1980#6682 for the italian translation <3
+
+@Yiid#0652 for the turkish translation <3
+
+Liederkranz#3395 for the spanish translation <3
