@@ -54,3 +54,9 @@ Spanish
 -------
 
 Translated by Liederkranz (``Liederkranz#3395 267762143091359744`` on Discord)
+
+------
+Polish
+------
+
+Translated by toniekubek (``toniekubek#1561 349122786331197441`` on Discord)

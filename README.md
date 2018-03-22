@@ -38,4 +38,6 @@ Once you've translated it, just send me a PM with the .json file ([hastebin](htt
 
 @Yiid#0652 for the turkish translation <3
 
-Liederkranz#3395 for the spanish translation <3
+@Liederkranz#3395 for the spanish translation <3
+
+@toniekubek#1561 for the polish translation <3
